@@ -1,0 +1,20 @@
+[
+    {
+        "username": "Abraham Tesfay",
+        "age": "32",
+        "cars": [
+    		{"name":"Ford", "models": "Fiesta"},
+    		{"name":"BMW", "models": "320"},
+    		{"name":"Fiat", "models": "500"}
+  		]
+    },
+    {
+        "username": "Cheng Chin Lim",
+        "age": "22",
+ 		"cars": [
+    		{"name":"Ford", "models":"Focus"},
+    		{"name":"BMW", "models":"X3"},
+    		{"name":"Fiat", "models":"Panda"}
+  		]
+    }
+]
