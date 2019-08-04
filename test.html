@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script>
+var x = "";
+var i,j;
+
+fetch('https://raw.githubusercontent.com/KimlengHor/revents/master/sample.json').then(function(response) {
+  return response.json();
+}).then(function(data) {
+  var myObj = data;
+  for (i in myObj){
+      x += "<h1> Name: " + myObj[i].username + "</h1>";
+      x += "<h2> Age: " + myObj[i].age + "</h2>";
+  for (j in myObj[i].cars) {
+      x += "<h3> Car: " + myObj[i].cars[j].name + " & Model: " + myObj[i].cars[j].models + "</h3>";
+    }
+}
+
+  document.getElementById("demo").innerHTML = x;//myObj.Full_Name;
+});
+
+</script>
+
+</body>
+</html>
